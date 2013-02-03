@@ -27,7 +27,7 @@ import android.view.View.OnClickListener;
 
 public class MyDownLoadDemo extends Activity {
 
-	private static final String Path="http://www.mldnjava.cn/android/android_book.jpg";//图片下载网址
+	private static final String Path="http://www.baidu.com/img/shouye_b5486898c692066bd2cbaeda86d74448.gif";//图片下载网址
 	private final String FileName="/mnt/sdcard/myData/logo.jpg";
 	private Bitmap bitmap=null;//定义位图图像
 	private ImageView imgShow=null;//定义图片显示（下载保存显示）
