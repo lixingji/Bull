@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .eunit
 deps
 *.o
 *.beam
 *.plt
 =======
+=======
+>>>>>>> 1230e750577dc2e80de9b89b953c144773b73a87
 # built application files
 *.apk
 *.ap_
@@ -25,4 +28,7 @@ local.properties
 # Eclipse project files
 .classpath
 .project
+<<<<<<< HEAD
 >>>>>>> 3731e2b5cc0df93493f475f55ef3b176e4970eda
+=======
+>>>>>>> 1230e750577dc2e80de9b89b953c144773b73a87
