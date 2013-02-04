@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+    
+    <Button 
+        android:id="@+id/butSave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00FFFF"
+        android:text="点击下载并保存百度图标"/>
+    
+    <ImageView 
+        android:id="@+id/imgShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <Button 
+        android:id="@+id/butLoad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:text="点击加载读取百度图标"/>
+    
+    <ImageView 
+        android:id="@+id/imgLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+</LinearLayout>
