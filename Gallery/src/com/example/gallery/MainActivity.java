@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 
-	private Gallery gallery;
+	private Gallery gallery; //定义Gallery变量
 	//声明图片的数组
 	private int[] resIds={
 		R.drawable.img1,R.drawable.img2,
@@ -30,8 +30,8 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 	
 		gallery=(Gallery)this.findViewById(R.id.gallery);
-		ImageAdapter imageAdapter = new ImageAdapter(this);
-		gallery.setAdapter(imageAdapter);
+		ImageAdapter imageAdapter = new ImageAdapter(this);//
+		gallery.setAdapter(imageAdapter);//适配器设置
 	}
 
 	public class ImageAdapter extends BaseAdapter{
@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
 		public int getCount() {
 			// TODO Auto-generated method stub
 			
-			return Integer.MAX_VALUE;
+			return Integer.MAX_VALUE;//最大计数
 		}
 
 		@Override
@@ -53,23 +53,23 @@ public class MainActivity extends Activity {
 			// TODO Auto-generated method stub
 			if(position>=getCount())
 			position=0;
-			return position;
+			return position;//返回当前图像位置
 		}
 
 		@Override
 		public long getItemId(int position) {
 			// TODO Auto-generated method stub
-			return resIds[position];
+			return resIds[position];//返回数组对应的image
 		}
 
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
 			// TODO Auto-generated method stub
 			//自定义的适配器，用自定义的布局来显示
-			ImageView imageView=new ImageView(context);
-			imageView.setImageResource(resIds[position%resIds.length]);
-			imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-			imageView.setLayoutParams(new Gallery.LayoutParams(500,400));
+			ImageView imageView=new ImageView(context);//新建imageView对象
+			imageView.setImageResource(resIds[position]);//图片资源
+			imageView.setScaleType(ImageView.ScaleType.FIT_XY);//控制图片塞满view
+			imageView.setLayoutParams(new Gallery.LayoutParams(500,400));//设置图像长宽参数
 			imageView.setBackgroundResource(mGalleryItemBackground);
 			return imageView;
 		}

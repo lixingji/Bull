@@ -1,17 +1,15 @@
 package com.example.tabview;
 
-
 import android.app.TabActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-
 public class MainActivity extends TabActivity {
 
 	TabHost mTabHost;
-	TextView tv1, tv2, tv3, tv4;
+	TextView tv1, tv2, tv3;//定义文本变量
 
 	/** Called when the activity is first created. */
 	@Override
@@ -26,8 +24,9 @@ public class MainActivity extends TabActivity {
 
 	private void setupTabs() {
 
-		mTabHost = getTabHost();
+		mTabHost = getTabHost();//调用 TabActivity的getTabHost()方法获取TabHost
 
+		//向TabHost添加三个Tab
 		mTabHost.addTab(mTabHost.newTabSpec("tab_1").setIndicator("Download")
 				.setContent(R.id.tv1));
 		mTabHost.addTab(mTabHost.newTabSpec("tab_2").setIndicator("ListView")
