@@ -1,5 +1,28 @@
+<<<<<<< HEAD
 .eunit
 deps
 *.o
 *.beam
 *.plt
+=======
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+>>>>>>> 3731e2b5cc0df93493f475f55ef3b176e4970eda
